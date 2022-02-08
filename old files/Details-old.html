@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Details</title>
+</head>
+
+<body>
+    <!-- <div class="detailsHeader">
+        <img src="projectImages/projectImages/logo-White.svg" alt="logo-White">
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#Menu">Menu</a></li>
+                <li><a href="index.html#Gallery">Gallery</a></li>
+                <li><a href="index.html#Testimonials">Testimonials</a></li>
+                <li><a href="index.html#Contact">Contact Us</a></li>
+                <li><a class="red_navbar" href="#">Search</a></li>
+                <li><a class="red_navbar" href="#">Profile</a></li>
+                <li><a class="red_navbar" href="#">Cart <span id="cartCounter">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div> -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark  sticky-top navbar-style">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logo"
+                    src="projectImages/projectImages/logo-White.svg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarID">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-style" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-style" aria-current="page" href="index.html#Men">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  nav-style" aria-current="page" href="index.html#Gallery">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-style" aria-current="page"
+                            href="index.html#Testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-style red-nav" aria-current="page" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-style red-nav" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-style red-nav" aria-current="page" href="#">Cart <span
+                                id="cartCounter">0</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="box">
+        <img id="meal1" src="projectImages/projectImages/meal1.png" alt="meal1" class="col-md-6">
+        <div class="col-md-6">
+            <h1 class="coloredText">Best sandwich</h1>
+            <p>23.9 SAR</p>
+            <p>&#11088;4.5 rating</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi labore eos delectus, porro eveniet
+                maiores
+                repellendus! Iusto eos illo, nisi fugiat delectus nostrum harum aliquid rerum nobis
+                tempora nulla sit.</p>
+            <div>
+                <button onclick="decrementBtn()" class="order_amount">-</button>
+                <button id="counterAmount" class="order_amount" value="1">1</button>
+                <button onclick="incrementBtn()" class="order_amount">+</button>
+                <button onclick="incrementByValue()" class="normalButton" id="addCartDetails">add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="coloredText">description</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dolore hic quaerat deserunt eum iusto
+            architecto,
+            officia impedit consequuntur earum voluptatum totam quo minima molestiae velit
+            nesciunt voluptas praesentium est.</p>
+        <p>Nam nesciunt ex earum inventore corrupti consequuntur molestias accusamus eaque, dignissimos exercitationem
+            explicabo expedita adipisci dolor nisi! Blanditiis omnis, nobis earum non architecto
+            sapiente tempora asperiores minus, hic, deleniti enim!</p>
+    </div>
+    <div class="row">
+        <h4>
+            nutrition facts
+        </h4>
+        <table>
+            <tr>
+                <th align="left" colspan="3">Supplements Facts</th>
+            </tr>
+            <tr>
+                <th align="left" colspan="3">Serving Size: <span style="font-weight:normal;">1 Cookie (57 g)</span></th>
+            </tr>
+            <tr>
+                <th align="left" colspan="3">Serving Per Container: <span style="font-weight:normal;">12</span></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Amount Per Serving</th>
+                <th>%Daily Value*</th>
+            </tr>
+            <tr>
+                <td>Calories</td>
+                <td>200</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Calories from Fat</td>
+                <td>70</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total Fat</td>
+                <td>7 g</td>
+                <td>11%</td>
+            </tr>
+            <tr>
+                <td>Saturated Fat</td>
+                <td>4 g</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Trans Fat</td>
+                <td>0 g</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Cholesterol</td>
+                <td>0 mg</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Sodium</td>
+                <td>220 mg</td>
+                <td>9%</td>
+            </tr>
+            <tr>
+                <td>Total Carbohydrate</td>
+                <td>31 g</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Dietary Fiber</td>
+                <td>5 g</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Sugars</td>
+                <td>12 g</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sugar Alcohol</td>
+                <td>0 g</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Protin</td>
+                <td>8 g</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Vitamin A</td>
+                <td></td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Vitamin C</td>
+                <td></td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Calcium</td>
+                <td></td>
+                <td>2%</td>
+            </tr>
+            <tr>
+                <td>Iron</td>
+                <td></td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td align="left" colspan="3">* Percent Daily Values are based on a 2,000 calorie diet. Your daily values
+                    may
+                    be higher pr lower depending on your calorie needs</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <section id="Reviews">
+            <h3>Reviews</h3>
+            <div id="box">
+                <img id="man-eating_img" src="projectImages/projectImages/man-eating-burger.png"
+                    alt="man-eating-burger">
+                <div>
+                    <h4>reviewer name</h4>
+                    <h5>Dhahran - Feb 08,2020&#11088&#11088&#11088&#11088&#11088</h5>
+                    <p id="man-eating_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deserunt
+                        minima
+                        nemo!
+                        Accusantium
+                        doloremque ducimus ea eligendi facere inventore minima neque numquam officiis quam,
+                        repudiandae tempore temporibus? Dolore, itaque, reprehenderit?</p>
+                </div>
+            </div>
+            <button onclick="show()" class="normalButton">Add Your Review</button>
+
+            <form id="reviewForm" method="get" onsubmit="return validate()">
+                <label for="Image">Image</label>
+                <input type="file" id="Image" name="Image"><br>
+                <label for="rate">Rate the Food</label>
+                <input type="range" id="rate" name="rate" min="0" max="5"><br>
+                <label for="name">Name</label>
+                <input type="text" class="text_input" id="name" name="name" id="name"
+                    placeholder="First and Last name"><br>
+                <label for="Review">Review</label>
+                <label id="ErrorMessage" class="hideError">Please type your review</label>
+                <textarea maxlength="500" onkeyup="change()" name="Review" id="review" class="text_input"
+                    placeholder="Type your review here max 500 characters"></textarea>
+                <p id="counter">0/500</p>
+                <input type="submit" class="normalButton" id="submitButton" value="Submit">
+            </form>
+
+        </section>
+    </div>
+
+    <div class="row">
+        <div class="box" id="Contact">
+            <ul class="contact_us_list">
+                <li>
+                    <p class="contact_us_text">phone:<b>+966-13-860-0000</b></p>
+
+                </li>
+                <li>
+                    <img class="float_left" src="projectImages/projectImages/clock.svg" alt="clock">
+                    <p class="contact_us_text">sun-thr 11:00 - 23:00</p>
+                    <p class="contact_us_text">fri-sat 12:00-23</p>
+                </li>
+                <li>
+                    <img class="float_left" src="projectImages/projectImages/placeholder.svg" alt="placeholder">
+                    <p class="contact_us_text">123 KFUPM Students Mall</p>
+                    <p class="contact_us_text">Dhahran 34464</p>
+                </li>
+                <li><a href="" class="contact_us_text">Facebook</a> <a href="" class="contact_us_text">Twitter</a> <a
+                        href="" class="contact_us_text">Instagram</a></li>
+            </ul>
+            <img id="map_img" src="projectImages/projectImages/map.png" alt="map">
+        </div>
+    </div>
+
+    <footer>
+        <div id="left_footer">
+            <img src="projectImages/projectImages/logo-red.svg" alt="logo-red">
+            <p id="left_footer_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae doloribus
+                harum eos. Quibusdam
+                recusandae corporis cupiditate praesentium, numquam, doloribus eligendi alias, aperiam repellat minus
+                mollitia
+                rerum
+                quod et magni!</p>
+        </div>
+        <div id="centered_footer">
+            <h3 class="footer_text">useful links</h3>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#Menu">Menu</a></li>
+                <li><a href="index.html#Testimonials">Testimonials</a></li>
+                <li><a href="index.html#Contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="right_footer">
+            <h3 class="footer_text">Integram feeds</h3>
+            <div class="row">
+                <div class="column">
+                    <a href="#"><img src="projectImages/projectImages/meal1.png" alt="meal1"></a>
+                    <a href="#"><img src="projectImages/projectImages/meal2.png" alt="meal2"></a>
+                    <a href="#"><img src="projectImages/projectImages/meal3.png" alt="meal3"></a>
+                </div>
+                <div class="column">
+                    <a href="#"><img src="projectImages/projectImages/meal4.png" alt="meal4"></a>
+                    <a href="#"><img src="projectImages/projectImages/meal5.png" alt="meal5"></a>
+                    <a href="#"><img src="projectImages/projectImages/meal6.png" alt="meal6"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

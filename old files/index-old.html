@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <header>
+        <!-- <img src="projectImages/projectImages/logo-White.svg" alt="logo-White">
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Testimonials">Testimonials</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+                <li><a class="red_navbar" href="#">Search</a></li>
+                <li><a class="red_navbar" href="#">Profile</a></li>
+                <li><a class="red_navbar" href="#">Cart <span id="cartCounter">0</span></a>
+                </li>
+            </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-style">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="projectImages/projectImages/logo-White.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarID">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-style" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-style" aria-current="page" href="index.html#Men">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  nav-style" aria-current="page" href="index.html#Gallery">Gallary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-style" aria-current="page"
+                                href="index.html#Testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item red_nav_item">
+                            <a class="nav-link nav-style red-nav" aria-current="page" href="#">Search</a>
+                        </li>
+                        <li class="nav-item red_nav_item">
+                            <a class="nav-link nav-style red-nav" aria-current="page" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item red_nav_item">
+                            <a class="nav-link nav-style red-nav" aria-current="page" href="#">Cart <span
+                                    id="cartCounter">0</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="header_content">
+            <h1 id="partyTime_text"> Party Time</h1>
+            <div class="upperHalf-trapezoid">
+                <h3 id="offer_text">Buy any 2 burgers and get 1.5L Pepsi Free</h3>
+            </div>
+            <div class="lowerHalf-trapezoid">
+            </div>
+            <button class="button" id="order">Order Now</button>
+        </div>
+    </header>
+
+    <section id="Menu">
+        <h2 class="sections_text">Want To Eat</h2>
+        <p class="centre_text">Try our most delicious food and usually take minutes to deliver</p>
+        <p id="meals_text">pizza fast_food cupcake sandwich spaghetti burger</p>
+        <div id="delivery_box">
+            <img id="delivery_img" src="projectImages/projectImages/delivery.png" alt="delivery">
+            <div class="triangle">
+                <h2 id="triangle_text"> We guarantee 30 minutes delivery</h2>
+            </div>
+            <p id="after_triangle_text">If your are having a meeting, working late at night and need an extra push
+            </p>
+        </div>
+    </section>
+
+    <section id="Gallery">
+        <h2 class="sections_text">our most popular recipes</h2>
+        <p class="centre_text">Try our most delicious food and usually take minutes to deliver</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a href="Details.html">
+                    <img src="projectImages/projectImages/meal1.png" alt="meal1">
+                    <div id="card_content">
+                        <p>&#11088;4.5 rating</p>
+                        <p><b>Best sandwich</b></p>
+                        <p>Some description</p>
+                    </div>
+                </a>
+                <button onclick="incrementBy1()" class="button addCart">add to cart</button>
+                <p>23.9 SAR</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a href="Details.html">
+                    <img src="projectImages/projectImages/meal2.png" alt="meal2">
+                    <div id="card_content">
+                        <p>&#11088;4.5 rating</p>
+                        <p><b>Burger</b></p>
+                        <p>Some description</p>
+                    </div>
+                </a>
+                <button onclick="incrementBy1()" class="button addCart">add to cart</button>
+                <p>25.9 SAR</p>
+            </div>
+            <div class="col-lg-3 col-md-4  col-sm-12">
+                <a href="Details.html">
+                    <img src="projectImages/projectImages/meal3.png" alt="meal3">
+                    <div id="card_content">
+                        <p>&#11088;4.5 rating</p>
+                        <p><b>Burger Meal</b></p>
+                        <p>Some description</p>
+                    </div>
+                </a>
+                <button onclick="incrementBy1()" class="button addCart">add to cart</button>
+                <p>27.5 SAR</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a href="Details.html">
+                    <img src="projectImages/projectImages/meal4.png" alt="meal4">
+                    <div id="card_content">
+                        <p>&#11088;4.5 rating</p>
+                        <p><b>Best Deal Meal</b></p>
+                        <p>Some description</p>
+                    </div>
+                </a>
+                <button onclick="incrementBy1()" class="button addCart">add to cart</button>
+                <p>32.9 SAR</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a href="Details.html">
+                    <img src="projectImages/projectImages/meal5.png" alt="meal5">
+                    <div id="card_content">
+                        <p>&#11088;4.5 rating</p>
+                        <p><b>Chicken Burger</b></p>
+                        <p>Some description</p>
+                    </div>
+                </a>
+                <button onclick="incrementBy1()" class="button addCart">add to cart</button>
+                <p>19.4 SAR</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a href="Details.html">
+                    <img src="projectImages/projectImages/meal6.png" alt="meal6">
+                    <div id="card_content">
+                        <p>&#11088;4.5 rating</p>
+                        <p><b>Pizza</b></p>
+                        <p>Some description</p>
+                    </div>
+                </a>
+                <button onclick="incrementBy1()" class="button addCart">add to cart</button>
+                <p>28.5 SAR</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Testimonials">
+        <h2 class="sections_text">clients testimonials</h2>
+        <div class="row align-items-center">
+            <div class="col">
+                <img id="man-eating_img" src="projectImages/projectImages/man-eating-burger.png"
+                    alt="man-eating-burger">
+            </div>
+            <div class="col" id="man-eating_text">
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Neque ullam deserunt laborum, laboriosam veritatis
+                    quibusdam blanditiis dolor exercitationem velit commodi quae assumenda incidunt
+                    voluptas. Corporis ex nulla repellendus ullam nihil!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="row">
+            <div id="contact_us" class="col-sm-12 col-md-12 col-lg-6">
+                <ul class="contact_us_list">
+                    <li>
+                        <p class="contact_us_text">phone:<b>+966-13-860-0000</b></p>
+                    </li>
+                    <li>
+                        <img class="float_left" src="projectImages/projectImages/clock.svg" alt="clock">
+                        <p class="contact_us_text">sun-thr 11:00 - 23:00</p>
+                        <p class="contact_us_text">fri-sat 12:00-23</p>
+                    </li>
+                    <li><img class="float_left" src="projectImages/projectImages/placeholder.svg" alt="placeholder">
+                        <p class="contact_us_text">123 KFUPM Students Mall</p>
+                        <p class="contact_us_text">Dhahran 34464</p>
+                    </li>
+                    <li><a class="contact_us_text" href="">facebook</a>
+                        <a class="contact_us_text" href="">Twitter</a>
+                        <a class="contact_us_text" href="">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <img id="map_img" src="projectImages/projectImages/map.png" alt="map">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img src="projectImages/projectImages/logo-red.svg" alt="logo-red">
+                <p id="left_footer_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                    molestiae doloribus harum eos. Quibusdam recusandae corporis cupiditate praesentium,
+                    numquam, doloribus eligendi alias, aperiam repellat minus mollitia rerum quod et magni!</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h3 class="footer_text">useful links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#Testimonials">Testimonials</a></li>
+                    <li><a href="#Contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h3 class="footer_text">Integram feeds</h3>
+                <div class="row">
+                    <div class="col">
+                        <a href="#"><img class="footer_img" src="projectImages/projectImages/meal1.png" alt="meal1"></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img class="col footer_img" src="projectImages/projectImages/meal2.png"
+                                alt="meal2"></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img class="col footer_img" src="projectImages/projectImages/meal3.png"
+                                alt="meal3"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#"><img class="footer_img" src="projectImages/projectImages/meal4.png" alt="meal4"></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img class="footer_img" src="projectImages/projectImages/meal5.png" alt="meal5"></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img class="footer_img" src="projectImages/projectImages/meal6.png" alt="meal6"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-black">
+        <div class="col-sm-8">
+            <a class="navbar-brand" href="">
+                <img src="projectImages/projectImages/logo-White.svg" alt="logo-White">
+            </a>
+        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.html#Menu">Menu</a></li>
+                    <li class="nav-item"><a href="index.html#Gallery">Gallery</a></li>
+                    <li class="nav-item"><a href="index.html#Testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a href="index.html#Contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="red_navbar" href="#">Search</a></li>
+                    <li class="nav-item"><a class="red_navbar" href="#">Profile</a></li>
+                    <li class="nav-item"><a class="red_navbar" href="#">Cart <span id="cartCounter">0</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
